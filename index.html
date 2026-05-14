@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRAVEX-9 • OVERDRIVE EDITION</title>
+    <link rel="stylesheet" href="stylos.css">
+</head>
+<body>
+
+    <canvas id="c"></canvas>
+
+    <div id="hud">
+        <div class="panel">KRAVEX-9 // HP: <span id="hp">100</span><br>SCORE: <span id="score">0</span></div>
+        <div class="panel" style="text-align:right">WAVE: <span id="wave">1</span><br><span id="weapon">NEON-9</span>: <span id="ammo">∞</span></div>
+    </div>
+
+    <div id="startmenu">
+        <h1 style="font-size:60px; color:#f00; margin:0; text-shadow: 4px 4px #50f;">KRAVEX-9</h1>
+        <p style="font-size:20px;">SISTEMA OPERATIVO TADASHI v2.0</p>
+        <button onclick="startGame(1)">INICIAR PURGA</button>
+    </div>
+
+    <div id="gameover">
+        <h1 style="font-size:50px; color:#f00;">CONEXIÓN PERDIDA</h1>
+        <p>PUNTAJE FINAL: <span id="finalscore">0</span></p>
+        <button onclick="location.reload()">REINICIAR</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
